@@ -1,2 +1,2 @@
 #! /bin/ash
-cwa-event-qr-code poster $@ --filepath=/tmp/cwa.pdf && pdf2svg /tmp/cwa.pdf /tmp/cwa.svg
+cwa-event-qr-code poster "$@" --filepath=/tmp/cwa.pdf && pdf2svg /tmp/cwa.pdf /tmp/cwa.svg
