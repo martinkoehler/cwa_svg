@@ -9,7 +9,10 @@ app
 
 Usage: 
 ```
+# Check out this repo and cd into the dir
+# To build the container issue
 docker build -t cwa_svg .
+# To create the image
 docker run --rm -v /tmp:/tmp cwa_svg ./cwa_svg --description "My Event" --address "ABC Street 12 * 12345 Town" --type=6
 ```
 
