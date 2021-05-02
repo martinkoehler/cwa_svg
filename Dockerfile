@@ -10,7 +10,7 @@ RUN ./configure && make
 # Final image
 FROM node:16-alpine
 # Need cairo and poppler and liberation font
-RUN apk add --update-cache cairo glib poppler-glib ttf-liberation
+RUN apk add --no-cache cairo glib poppler-glib ttf-liberation
 COPY --from=builder /pdf2svg/pdf2svg /usr/local/bin/pdf2svg
 RUN npm install cwa-event-qr-code --global
 
