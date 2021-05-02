@@ -8,19 +8,23 @@ This Dockerfile allows to easily create svg images for the corona warn
 app
 
 Usage: 
+```
 docker build -t cwa_svg .
-docker run --rm -v /tmp:/tmp cwa_svg ./cwa_svg --description "DESY Library" --address "Geb. 1d * Notkestrasse 85 * D-22607 Hamburg" --type=6
+docker run --rm -v /tmp:/tmp cwa_svg ./cwa_svg --description "My Event" --address "ABC Street 12 * 12345 Town" --type=6
+```
 
 where the arguments 
+```
 --description
 --address
 --type
+```
 
-are the parameters from the cwa-event-qr-code application:
+are the parameters from the [cwa-event-qr-code](https://github.com/corona-warn-app/cwa-event-qr-code) application:
 
-https://github.com/corona-warn-app/cwa-event-qr-code
 
-The result is cwa.svg and cwa.pdf located at /tmp
+
+The result is cwa.svg and cwa.pdf, which will be located at /tmp
 <!-- vim: spell spelllang=en_gb bomb
 
 -->
